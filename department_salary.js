@@ -60,16 +60,21 @@ const company = {
 };
 
 //task 2
-//thism is will get the salary 
+//setting up the function
 function calculateDepartmentSalary(departmentName) {
-    let departmentsalary = departmentName.salary;
+    let totaldepartmentsalary = employees.salary;
 
-    for(let subordinates of company.subordinates) {
+    for(let subordinates of employees.subordinates) {
         departmentsalary += calculateDepartmentSalary(subordinates);
 }
-    return departmentsalary;
+    return totaldepartmentsalary;
 }
-// finding salary of sales department
-const departmentsalary = calculateDepartmentSalary ('Sales');
-console.log ('Department salary for Sales teams is: $${departmensalary}');
+ //calcuate the salarys per department 
+const totalEngineeringSalary= calculateDepartmentSalary ('Engineering');
+const totalSalesSalary= calculateDepartmentSalary ('Sales');
+
+//output
+console.log('Sales Salary $${totalEnginneringSalary');
+console.log ('Engineering Salary $${totalSalesSalary');
+
 
