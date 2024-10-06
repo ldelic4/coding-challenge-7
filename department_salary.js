@@ -1,7 +1,7 @@
 //task 1 
 //just the company details 
 const company = {
-    dpartments: [
+    departments: [
         {
             departmentName:'Engineering',
             employees:[
@@ -58,3 +58,5 @@ const company = {
         }
     ]
 };
+
+//task 2
