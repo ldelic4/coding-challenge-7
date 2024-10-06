@@ -77,4 +77,18 @@ const totalSalesSalary= calculateDepartmentSalary ('Sales');
 console.log('Sales Salary $${totalEnginneringSalary');
 console.log ('Engineering Salary $${totalSalesSalary');
 
+//task 3
+//function to calculate salary 
+function calcaulteCompanySalary (salary) {
+    let companySalary = salary.subordinates;
 
+    for (let subordinates of company.subordinates);
+
+}
+return companySalary
+
+//loop to iterate
+for (let i=1; i <= 6; i++ ) {
+    console.log('companySalary: $${i}');
+
+}
